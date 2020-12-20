@@ -144,6 +144,8 @@ void loop()
   }
 
   getUid();
+  
+  delay(5000);
 }
 
 /************************************* GSM MODULE *************************************/
@@ -252,5 +254,4 @@ void getUid()
   sender=0;
   Serial.println(idCollector);  
   
-  delay(15000);
 }
