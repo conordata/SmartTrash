@@ -7,9 +7,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial gprsSerial(5, 6);
 
-String idTrash = "bbmp001", idCollector;
-unsigned long timeRefresh;
-int levelRefresh;
+String idTrash = "bbmp0001", idCollector;
 
 #define cardSensor 2
 
@@ -115,14 +113,7 @@ void setup()
   scale.tare(); //Assuming there is no weight on the scale at start up, reset the scale to 0
 
   /***************************************** BEGINING ***************************************/
-  
-  levelSensor();
-  weightSensor();
-  communication(0);
-  
-  levelRefresh=0; // this
-  timeRefresh=millis(); // and this are variable used in order to send new data to the app after a threshold
-  
+ 
 }
 
 void loop()
@@ -134,29 +125,22 @@ void loop()
   if ((cardDect==1) && (sender==0)) {
     communication(1);
     sender=1;
-    levelRefresh=0;
     Serial.println("Collection data sending OK!");
   }
   
   else if (cardDect==1 && (sender==1)) {
     weightSensor();
     levelSensor();
-
-    if((millis()-timeRefresh)>=10000 || (level-levelRefresh>10)) {  
-      //sends values to the app after 15min or a 10% changing of the filling level
-      communication(0);
-      timeRefresh=millis();
-      levelRefresh=level;
-      Serial.print("Id Trash bin: ");
-      Serial.println(idTrash);
-      Serial.print("Level= ");
-      Serial.print(level);
-      Serial.println("%");
-      Serial.print("Weight= ");
-      Serial.print(weight);
-      Serial.println("kg");
-      //Serial.println("Normal update sending OK!");
-    }
+    communication(0);
+//    Serial.print("Id Trash bin: ");
+//    Serial.println(idTrash);
+//    Serial.print("Level= ");
+//    Serial.print(level);
+//    Serial.println("%");
+//    Serial.print("Weight= ");
+//    Serial.print(weight);
+//    Serial.println("kg");
+//    Serial.println("Normal update sending OK!");
   }
 
   getUid();
@@ -268,5 +252,5 @@ void getUid()
   sender=0;
   Serial.println(idCollector);  
   
-  delay(2000);
+  delay(15000);
 }
