@@ -188,7 +188,7 @@ void communication(bool contr)  //controller 0 for monitoring 1 for collection
   
   // set http param value
   
-  gprsSerial.println("AT+HTTPPARA=\"URL\",\"swc-monitor.000webhostapp.com/controllers/" + controller +"\"");
+  gprsSerial.println("AT+HTTPPARA=\"URL\",\"myswc-monitoring.000webhostapp.com/controllers/" + controller +"\"");
   delay(5000);
   toSerial();
   
