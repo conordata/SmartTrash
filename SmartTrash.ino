@@ -253,5 +253,7 @@ void getUid()
   idCollector=(readCard[0]+readCard[1]+readCard[2]+readCard[3]);
   sender=0;
   Serial.println(idCollector);  
+
+  delay(2000);
   
 }
