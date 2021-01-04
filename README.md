@@ -1,1 +1,1 @@
-#Smart trash bin
+# Smart trash bin
