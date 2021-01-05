@@ -8,23 +8,24 @@ The hardware part of the system is made up of different components interconnecte
 
 ### Components used
 
-**Arduino board
-**GSM module SIM900
-**HC-SR04 ultrasonic
-**20 kg load cell with HX711 amplifier
-**RFID module RFID-RC522
-**5V power supply
+*Arduino board
+*GSM module SIM900
+*HC-SR04 ultrasonic
+*20 kg load cell with HX711 amplifier
+*RFID module RFID-RC522
+*5V power supply
 
 ### Interfacing 
 
-|**Componant pin**|**Arduino pin**|
-|-----------|-----------|
-|RFID Sensor|
-|SCK|13|
-|MISO|12|
-|MOSI|11|
-|SDA(SS)|10|
-|RST|9|
-|HC-SR04 ultrasonic|
-|echoPin|8|
-|TriggerPin|7|
+| **Componant pin** | **Arduino pin** |
+|-------------------|-----------------|
+| RFID Sensor       |                 |
+| SCK               |13               |
+| MISO              |12               |
+| MOSI              |11               |
+| SDA(SS)           |10               |
+| RST               |9                |
+| HC-SR04 ultrasonic|                 |
+|-------------------|-----------------|
+| echoPin           |8                |
+| TriggerPin        |7                |
