@@ -30,12 +30,17 @@ The hardware part of the system is made up of different components interconnecte
 | HC-SR04 ultrasonic		|         	        	|
 | echoPin           		| 8       	         	|
 | TriggerPin        		| 7       	         	|
+| VCC				| 5V				|
+| GND				| GND				|
 | GSM module   			|				|
 | RX				| 6  				|
-| TX				| 5				|	
+| TX				| 5				|
+| Power supply			| 12V				|	
 | Load cell         		|   	  	            	|
 | Green A+ (DT)			| 4				|
 | White A- (SCK)    		| 3        	        	|
+| VCC				| 5V				|
+| GND				| GND				|
 | Push button			|				|
 | Pin 1				| 2 (with pull up resistor)	|
 | Pin 2				| GND				|
