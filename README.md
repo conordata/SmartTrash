@@ -17,5 +17,14 @@ The hardware part of the system is made up of different components interconnecte
 
 ### Interfacing 
 
-|Componant pin|Arduino pin|
-|---|-----------|
+|**Componant pin**|**Arduino pin**|
+|-----------|-----------|
+|RFID Sensor|
+|SCK|13|
+|MISO|12|
+|MOSI|11|
+|SDA(SS)|10|
+|RST|9|
+|HC-SR04 ultrasonic|
+|echoPin|8|
+|TriggerPin|7|
