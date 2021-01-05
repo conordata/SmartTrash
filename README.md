@@ -10,14 +10,14 @@ The hardware part of the system is made up of different components interconnecte
 
 ### Components used
 
-* Arduino board
-* GSM module SIM900
-* HC-SR04 ultrasonic
-* 20 kg load cell with HX711 amplifier
-* RFID module RFID-RC522
-* Push button
-* 5V power supply
-* Trash bin
+- Arduino board
+- GSM module SIM900
+- HC-SR04 ultrasonic
+- 20 kg load cell with HX711 amplifier
+- RFID module RFID-RC522
+- Push button
+- 5V power supply
+- Trash bin
 
 ### Interfacing 
 
@@ -52,9 +52,28 @@ The hardware part of the system is made up of different components interconnecte
 
 ## Programming
 
-To program the smart trash bin, be sure to download the Arduino IDE first. You can find it on the link **https://www.arduino.cc/en/software**. 
-- For this smart bin we used Arduino 1.8.12
+- To program the smart trash bin, be sure to download the Arduino IDE first. You can find it on the link **https://www.arduino.cc/en/software**. 
+For this smart bin we used Arduino 1.8.13
+
 ![alt_IDE](img/IDE.jpg)
 
-Then Download the smart bin Arduino sketch the link **https://github.com/conordata/SmartTrash**.
+- Then Download the smart bin Arduino sketch on the link **https://github.com/conordata/SmartTrash**.
+- Connect your Arduino board to a USB port on your computer, then upload the code.
+
+## Resources
+
+- Ultrasonic sensor - https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6
+- GSM module - https://lastminuteengineers.com/sim900-gsm-shield-arduino-tutorial/
+- Load cell - https://circuits4you.com/2016/11/25/hx711-arduino-load-cell/
+- RFID - https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
+
+## Made with
+
+- Arduino platform
+
+## Author
+
+* **ILUNGA WA LUNDA Ariel** _alias_ [@conordata](https://github.com/conordata)
+
+
  
