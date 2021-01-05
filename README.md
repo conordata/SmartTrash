@@ -13,19 +13,29 @@ The hardware part of the system is made up of different components interconnecte
 *HC-SR04 ultrasonic
 *20 kg load cell with HX711 amplifier
 *RFID module RFID-RC522
+*Push button
 *5V power supply
 
 ### Interfacing 
 
-| **Componant pin** | **Arduino pin** |
-|-------------------|-----------------|
-| RFID Sensor       |                 |
-| SCK               |13               |
-| MISO              |12               |
-| MOSI              |11               |
-| SDA(SS)           |10               |
-| RST               |9                |
-| HC-SR04 ultrasonic|                 |
-|-------------------|-----------------|
-| echoPin           |8                |
-| TriggerPin        |7                |
+| **Componant pin** 		| **Arduino pin** 		|
+|-------------------------------|-------------------------------|
+| RFID Sensor       		|  		               	|
+| SCK               		| 13		               	|
+| MISO              		| 12  		             	|
+| MOSI              		| 11  		             	|
+| SDA(SS)           		| 10     	          	|
+| RST               		| 9      	          	|
+| 3.3V				| 3.3V				|
+| HC-SR04 ultrasonic		|         	        	|
+| echoPin           		| 8       	         	|
+| TriggerPin        		| 7       	         	|
+| GSM module   			|				|
+| RX				| 6  				|
+| TX				| 5				|	
+| Load cell         		|   	  	            	|
+| Green A+ (DT)			| 4				|
+| White A- (SCK)    		| 3        	        	|
+| Push button			|				|
+| Pin 1				| 2 (with pull up resistor)	|
+| Pin 2				| GND				|
