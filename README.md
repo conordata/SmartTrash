@@ -17,3 +17,5 @@ The hardware part of the system is made up of different components interconnecte
 
 ### Interfacing 
 
+|Componant pin|Arduino pin|
+|---|-----------|
