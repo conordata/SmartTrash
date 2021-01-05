@@ -6,41 +6,55 @@ The Smart Bin is a device designed to work with a remote web application to moni
 
 The hardware part of the system is made up of different components interconnected with each other in order to achieve a specific goal.
 
+![alt_trash](img/trash.jpg)
+
 ### Components used
 
-*Arduino board
-*GSM module SIM900
-*HC-SR04 ultrasonic
-*20 kg load cell with HX711 amplifier
-*RFID module RFID-RC522
-*Push button
-*5V power supply
+* Arduino board
+* GSM module SIM900
+* HC-SR04 ultrasonic
+* 20 kg load cell with HX711 amplifier
+* RFID module RFID-RC522
+* Push button
+* 5V power supply
+* Trash bin
 
 ### Interfacing 
 
 | **Componant pin** 		| **Arduino pin** 		|
 |-------------------------------|-------------------------------|
-| RFID Sensor       		|  		               	|
+| **RFID Sensor**      		|  		               	|
 | SCK               		| 13		               	|
 | MISO              		| 12  		             	|
 | MOSI              		| 11  		             	|
 | SDA(SS)           		| 10     	          	|
 | RST               		| 9      	          	|
 | 3.3V				| 3.3V				|
-| HC-SR04 ultrasonic		|         	        	|
+| **HC-SR04 ultrasonic**	|         	        	|
 | echoPin           		| 8       	         	|
 | TriggerPin        		| 7       	         	|
 | VCC				| 5V				|
 | GND				| GND				|
-| GSM module   			|				|
+| **GSM module**		|				|
 | RX				| 6  				|
 | TX				| 5				|
 | Power supply			| 12V				|	
-| Load cell         		|   	  	            	|
+| **Load cell**        		|   	  	            	|
 | Green A+ (DT)			| 4				|
 | White A- (SCK)    		| 3        	        	|
 | VCC				| 5V				|
 | GND				| GND				|
-| Push button			|				|
+| **Push button**		|				|
 | Pin 1				| 2 (with pull up resistor)	|
 | Pin 2				| GND				|
+
+## Software
+
+## Programming
+
+To program the smart trash bin, be sure to download the Arduino IDE first. You can find it on the link **https://www.arduino.cc/en/software**. 
+- For this smart bin we used Arduino 1.8.12
+![alt_IDE](img/IDE.jpg)
+
+Then Download the smart bin Arduino sketch the link **https://github.com/conordata/SmartTrash**.
+ 
