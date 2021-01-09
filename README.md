@@ -58,7 +58,19 @@ For this smart bin we used Arduino 1.8.13
 ![alt_IDE](img/IDE.jpg)
 
 - Then Download the smart bin Arduino sketch on the link **https://github.com/conordata/SmartTrash**.
+
+- Before uploading the code to the Arduino board, be sure to open the sketch and set the smart bin ID. 
+
+![alt_ID](img/ID.jpg)
+
+This ID must be unique for each Smart Bin in the system and must be saved with the exact same name in the application database. Otherwise, it will not be able to send the data.
+
+- After setting the Recycle Bin ID, you may also need to change the web address to where the Smart Recycle Bin should send data depending on where you will host your web app. 
+
+![alt_site](img/site.jpg)
+
 - Connect your Arduino board to a USB port on your computer, then upload the code.
+- Then go to [https://github.com/conordata/myswc](https://github.com/conordata/myswc) to configure the web app
 
 ## Resources
 

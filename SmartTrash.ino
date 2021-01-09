@@ -7,7 +7,8 @@
 #include <SoftwareSerial.h>
 SoftwareSerial gprsSerial(5, 6);
 
-String idTrash = "bbmp0001", idCollector;
+String idTrash = "bbmp0001";
+String idCollector;
 
 #define cardSensor 2
 
@@ -161,7 +162,9 @@ void toSerial()
 void communication(bool contr)  //controller 0 for monitoring 1 for collection
 {
   // url construction
-
+  
+  String site = "myswc-monitoring.000webhostapp.com"; //web address to where the trash bin sends the data
+  
   String controller;
   if (!contr) controller = "newHistoric.php?idTrash=" + idTrash + "&level=" + String(level) + "&weight=" + String(weight);
   else controller = "newScan.php?idWorker=" + idCollector + "&idTrash=" + idTrash;
@@ -174,7 +177,7 @@ void communication(bool contr)  //controller 0 for monitoring 1 for collection
   
   // set http param value
   
-  gprsSerial.println("AT+HTTPPARA=\"URL\",\"myswc-monitoring.000webhostapp.com/controllers/" + controller +"\"");
+  gprsSerial.println("AT+HTTPPARA=\"URL\",\""+site+"/controllers/" + controller +"\"");
   delay(5000);
   toSerial();
   
