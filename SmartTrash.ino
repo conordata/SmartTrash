@@ -7,7 +7,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial gprsSerial(5, 6);
 
-String idTrash = "bbmp0001";
+String idTrash = "bbmp0001";    // Set the smart bin ID
 String idCollector;
 
 #define cardSensor 2
