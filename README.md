@@ -65,12 +65,12 @@ For this smart bin we used Arduino 1.8.13
 
 This ID must be unique for each Smart Bin in the system and must be saved with the exact same name in the application database. Otherwise, it will not be able to send the data.
 
-- After setting the Recycle Bin ID, you may also need to change the web address to where the Smart Recycle Bin should send data depending on where you will host your web app. 
+- After setting the smart bin ID, you may also need to change the web address to where the Smart Recycle Bin should send data depending on where you will host your web app. 
 
 ![alt_site](img/site.jpg)
 
 - Connect your Arduino board to a USB port on your computer, then upload the code.
-- Then go to [https://github.com/conordata/myswc](https://github.com/conordata/myswc) to configure the web app
+- Then go to https://github.com/conordata/myswc to configure the web app
 
 ## Resources
 
