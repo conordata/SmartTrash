@@ -7,7 +7,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial gprsSerial(5, 6);
 
-String idTrash = "bbmp0001";    // Set the smart bin ID
+String idTrash = "e-0001";    // Set the smart bin ID
 String idCollector;
 
 #define cardSensor 2
@@ -53,8 +53,8 @@ int weight;
 
 void setup()
 {  
-  gprsSerial.begin(19200);
-  Serial.begin(19200);
+  gprsSerial.begin(9600);
+  Serial.begin(9600);
 
   /************************************* GSM MODULE *************************************/
 
@@ -140,11 +140,11 @@ void loop()
 //    Serial.print("Weight= ");
 //    Serial.print(weight);
 //    Serial.println("kg");
-//    Serial.println("Normal update sending OK!");
+    Serial.println("Normal update sending OK!");
   }
 
   getUid();
-  
+  communication(0);
   delay(5000);
 }
 
@@ -162,7 +162,7 @@ void communication(bool contr)  //controller 0 for monitoring 1 for collection
 {
   // url construction
   
-  String site = "myswc-monitoring.000webhostapp.com"; //web address to where the trash bin sends the data
+  String site = "e-trash.jovalys.com"; //web address to where the trash bin sends the data
   
   String controller;
   if (!contr) controller = "newHistoric.php?idTrash=" + idTrash + "&level=" + String(level) + "&weight=" + String(weight);
