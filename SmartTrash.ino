@@ -162,43 +162,43 @@ void communication(bool contr)  //controller 0 for monitoring 1 for collection
 {
   // url construction
   
-  String site = "e-trash.jovalys.com"; //web address to where the trash bin sends the data
+  //String site = "e-trash.jovalys.com"; //web address to where the trash bin sends the data
   
-  String controller;
-  if (!contr) controller = "newHistoric.php?idTrash=" + idTrash + "&level=" + String(level) + "&weight=" + String(weight);
-  else controller = "newScan.php?idWorker=" + idCollector + "&idTrash=" + idTrash;
+  //String controller;
+  //if (!contr) controller = "newHistoric.php?idTrash=" + idTrash + "&level=" + String(level) + "&weight=" + String(weight);
+  //else controller = "newScan.php?idWorker=" + idCollector + "&idTrash=" + idTrash;
   
   // initialize http service
   
-  gprsSerial.println("AT+HTTPINIT");
-  delay(2000); 
-  toSerial();
+//  gprsSerial.println("AT+HTTPINIT");
+//  delay(2000); 
+//  toSerial();
   
   // set http param value
   
-  gprsSerial.println("AT+HTTPPARA=\"URL\",\"" + site + "/controllers/" + controller +"\"");
-  delay(5000);
-  toSerial();
-  
+//  gprsSerial.println("AT+HTTPPARA=\"URL\",\"" + site + "/controllers/" + controller +"\"");
+//  delay(5000);
+//  toSerial();
+//  
   // set http action type 0 = GET, 1 = POST, 2 = HEAD
   
-  gprsSerial.println("AT+HTTPACTION=0");
-  delay(6000);
-  toSerial();
+//  gprsSerial.println("AT+HTTPACTION=0");
+//  delay(6000);
+//  toSerial();
   
   // read server response
   
-  gprsSerial.println("AT+HTTPREAD"); 
-  delay(1000);
-  toSerial();
+//  gprsSerial.println("AT+HTTPREAD"); 
+//  delay(1000);
+//  toSerial();
 //  delay(2000);
   
-  gprsSerial.println("");
-  gprsSerial.println("AT+HTTPTERM");
-  toSerial();
-  delay(300);
-  
-  gprsSerial.println("");  
+//  gprsSerial.println("");
+//  gprsSerial.println("AT+HTTPTERM");
+//  toSerial();
+//  delay(300);
+//  
+//  gprsSerial.println("");  
 }
 
 /************************************* LEVEL SENSOR *************************************/
